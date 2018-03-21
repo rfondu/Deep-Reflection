@@ -7,14 +7,22 @@ body, html {
 
 
 	font-family: "HelveticaNeue-Light";
-	letter-spacing: -2px;
 	color: #fff;
-	font-size: 75px;
+	font-size: 18px;
 	 -webkit-font-smoothing: antialiased;
+}
+
+a {
+	color: #fff;
+}
+
+a:hover, a:active {
+	text-decoration: underline;
 }
 
 #dateTime {
 	left: 32px;
+	font-size: 75px;
 }
 
 #date {
@@ -25,4 +33,60 @@ body, html {
     position: absolute;
     top: 8px;
     right: 16px;
+    width: 25%;
 }
+
+#news {
+	left: 50%;
+	margin-left: -25%;
+	font-size: 18px;
+	position: absolute;
+	bottom: 0;
+	width: 50%;
+	height: 20vh;
+	
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 20%; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #000;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #fff;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.rss-item {
+	color: #fff
+}
+
