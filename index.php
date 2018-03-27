@@ -26,8 +26,33 @@
 </div>
 
 <div id="weather">
-	<div id="forecast">	
-		<a class="weatherwidget-io" href="https://forecast7.com/en/29d42n98d49/san-antonio/?unit=us" data-label_1="SAN ANTONIO" data-label_2="WEATHER" data-textcolor="White" >CIBOLO WEATHER</a>
+	<div id="forecast">
+		<?php
+			include("connect.php");
+			session_start();
+			ob_start();
+			
+			$sql = "SELECT @weather := Location FROM profiles WHERE Name='Active'";
+
+			$conn->query($sql);
+			
+			$sql = "SELECT * FROM locations WHERE LocationName=@weather";
+
+			$result = $conn->query($sql);
+		
+			if ($result->num_rows > 0) {		
+        		$hmm = $result->fetch_assoc();
+        		$city = $hmm['LocationName'];
+        		$wString = $hmm['LocationString'];
+        		
+        		echo '<a class="weatherwidget-io" href="https://forecast7.com/en/'.$wString.'/?unit=us" data-label_1="'.$city.'" data-label_2="WEATHER" data-textcolor="White" >CIBOLO WEATHER</a>';
+        		
+        	} else {
+    			echo "City weather info not found";
+			}
+			
+			$conn->close();
+		?>
 		<script>
 			!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 		</script>
@@ -51,8 +76,30 @@
 
 <div id="news">
 
-	<script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Frss.slashdot.org%2FSlashdot%2FslashdotMain&chan=titlelinkno&num=4&desc=1&utf=y"  charset="UTF-8" type="text/javascript"></script>
-	
+	<?php
+		include("connect.php");
+		session_start();
+		ob_start();
+
+		$sql = "SELECT @feed := NewsFeed FROM profiles WHERE Name='Active'";
+
+		$conn->query($sql);
+		
+		$sql = "SELECT * FROM newsFeeds WHERE FeedName=@feed";
+
+		$result = $conn->query($sql);
+		
+		if ($result->num_rows > 0) {
+			//while($row = $result->fetch_assoc()) {
+        	$link = $result->fetch_assoc()['FeedLink'];
+        	//}
+        	echo $link;
+        } else {
+    		echo "Feed link not found";
+		}
+		
+		$conn->close();
+	?>	
 	<!-- Other Feeds Confirmed to Work:
 	CNN
 	<script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Frss.cnn.com%2Frss%2Fcnn_topstories.rss&chan=titlelinkno&num=4&desc=1&utf=y"  charset="UTF-8" type="text/javascript"></script>
