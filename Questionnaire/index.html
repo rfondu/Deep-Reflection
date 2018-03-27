@@ -1,0 +1,287 @@
+
+<html>
+    <head>
+    	<link href="stylesheet.css" rel="stylesheet" type="text/css">
+        <style type ="text/css">
+        
+        input:required:invalid, input:focus:invalid {
+    		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAeVJREFUeNqkU01oE1EQ/mazSTdRmqSxLVSJVKU9RYoHD8WfHr16kh5EFA8eSy6hXrwUPBSKZ6E9V1CU4tGf0DZWDEQrGkhprRDbCvlpavan3ezu+LLSUnADLZnHwHvzmJlvvpkhZkY7IqFNaTuAfPhhP/8Uo87SGSaDsP27hgYM/lUpy6lHdqsAtM+BPfvqKp3ufYKwcgmWCug6oKmrrG3PoaqngWjdd/922hOBs5C/jJA6x7AiUt8VYVUAVQXXShfIqCYRMZO8/N1N+B8H1sOUwivpSUSVCJ2MAjtVwBAIdv+AQkHQqbOgc+fBvorjyQENDcch16/BtkQdAlC4E6jrYHGgGU18Io3gmhzJuwub6/fQJYNi/YBpCifhbDaAPXFvCBVxXbvfbNGFeN8DkjogWAd8DljV3KRutcEAeHMN/HXZ4p9bhncJHCyhNx52R0Kv/XNuQvYBnM+CP7xddXL5KaJw0TMAF8qjnMvegeK/SLHubhpKDKIrJDlvXoMX3y9xcSMZyBQ+tpyk5hzsa2Ns7LGdfWdbL6fZvHn92d7dgROH/730YBLtiZmEdGPkFnhX4kxmjVe2xgPfCtrRd6GHRtEh9zsL8xVe+pwSzj+OtwvletZZ/wLeKD71L+ZeHHWZ/gowABkp7AwwnEjFAAAAAElFTkSuQmCC);
+    		background-position: right top;
+    		background-repeat: no-repeat;
+  		}
+  		input:required:valid {
+    		background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAepJREFUeNrEk79PFEEUx9/uDDd7v/AAQQnEQokmJCRGwc7/QeM/YGVxsZJQYI/EhCChICYmUJigNBSGzobQaI5SaYRw6imne0d2D/bYmZ3dGd+YQKEHYiyc5GUyb3Y+77vfeWNpreFfhvXfAWAAJtbKi7dff1rWK9vPHx3mThP2Iaipk5EzTg8Qmru38H7izmkFHAF4WH1R52654PR0Oamzj2dKxYt/Bbg1OPZuY3d9aU82VGem/5LtnJscLxWzfzRxaWNqWJP0XUadIbSzu5DuvUJpzq7sfYBKsP1GJeLB+PWpt8cCXm4+2+zLXx4guKiLXWA2Nc5ChOuacMEPv20FkT+dIawyenVi5VcAbcigWzXLeNiDRCdwId0LFm5IUMBIBgrp8wOEsFlfeCGm23/zoBZWn9a4C314A1nCoM1OAVccuGyCkPs/P+pIdVIOkG9pIh6YlyqCrwhRKD3GygK9PUBImIQQxRi4b2O+JcCLg8+e8NZiLVEygwCrWpYF0jQJziYU/ho2TUuCPTn8hHcQNuZy1/94sAMOzQHDeqaij7Cd8Dt8CatGhX3iWxgtFW/m29pnUjR7TSQcRCIAVW1FSr6KAVYdi+5Pj8yunviYHq7f72po3Y9dbi7CxzDO1+duzCXH9cEPAQYAhJELY/AqBtwAAAAASUVORK5CYII=);
+    		background-position: right top;
+    		background-repeat: no-repeat;
+  		}
+        </style>
+        
+        <title>Deep Reflection Survey</title>
+        
+        <link rel="shortcut icon" href="../unlocked.ico">
+        
+    </head>
+    <body onload="gone()" onresize="gone()">
+
+        <div class="col-md-6" style="">
+            <center>
+            <div class="signup">
+                <h2 style="text-align: center;"><b>Smart Mirror Questionnaire</b></h2>
+                <article id="intro" style="text-align:left;padding:10px">
+                	The purpose of this questionnaire is to capture your thoughts about Smart Mirrors and to 
+                	determine which features would be most desirable in a Smart Mirror. Any information you 
+                	provide will be completely anonymous, we will not even ask for your name.<p>
+                	A Smart Mirror is a mirror, but with added features. For instance it could display the 
+                	time and date, local weather, news articles, etc.<p>
+                	
+                </article>    
+                <article id="theform" style="text-align:left;padding:10px">
+                    <form action="sendmail.asp" method="post" >
+                    <fieldset>
+                        <legend><b>Familiarity with Smart Mirrors</b></legend>
+                            <br>
+                            <legend>1. Have you heard of a Smart Mirror before now?</legend>
+                            <div class="q">
+                            <label>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q1_yes" name="Q1" value="Yes"> Yes&nbsp;&nbsp;
+                            <input type="radio" id="Q1_no" name="Q1" value="No"> No
+                            </label>
+                            </div>
+                            <br>
+                            <legend>2. Have you ever used a Smart Mirror?</legend>
+                            <div class="q">
+                            <label>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q2_yes" name="Q2" value="Yes"> Yes&nbsp;&nbsp;
+                            <input type="radio" id="Q2_no" name="Q2" value="No"> No
+                            </label>
+                            </div>
+                            <br>
+                            <legend>3. Do you think you would use a Smart Mirror?</legend>
+                            <div class="q">
+                            <label>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q3_yes" name="Q3" value="Yes"> Yes&nbsp;&nbsp;
+                            <input type="radio" id="Q3_no" name="Q3" value="No"> No&nbsp;&nbsp;
+                            <input type="radio" id="Q3_maybe" name="Q3" value="No"> Maybe
+                            </label>
+                            </div>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend><b>Features</b></legend>
+                            <br>
+                            <legend>4. Which features would you like to see in a smart mirror?</legend>
+                            <div class="q">
+                            <label>&nbsp;&nbsp;&nbsp;
+                            <input type="checkbox" name="Q4" value="Weadther"> Weather<br>&nbsp;&nbsp;&nbsp;
+  							<input type="checkbox" name="Q4" value="News"> News Feed<br>&nbsp;&nbsp;&nbsp;
+  							<input type="checkbox" name="Q4" value="TimeDate"> Time/Date<br>&nbsp;&nbsp;&nbsp;
+  							<input type="checkbox" name="Q4" value="Calendar"> Calendar<br>&nbsp;&nbsp;&nbsp;
+  							<input type="checkbox" name="Q4" value="Other"> Other&nbsp;&nbsp;
+  							<input type="text" name="Q4" maxlength="64"><br> 
+                            </label>
+                            </div>
+                            <br>
+                            <legend>5. Smart Mirrors can have more features if they incorporate a camera.  Do you think you would want a camera in your mirror?</legend>
+                            <div class="q">
+                            <label>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q5_yes" name="Q5" value="Yes"> Yes&nbsp;&nbsp;
+                            <input type="radio" id="Q5_no" name="Q5" value="No"> No
+                            </label>
+                            </div>
+                            <br>
+                            <legend>6. What would you feel is a <b>required</b> feature in a smart mirror, please explain?</legend>
+                            <div class="q">
+                            <label>&nbsp;&nbsp;&nbsp;
+                            <input type="text" name="Q6" maxlength="64"><br>
+                            </label>
+                            </div>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend><b>Value</b></legend>
+                            <br>
+                            <legend>7. What do you consider a fair price range for a smart mirror?</legend>
+                            <div class="q">
+                            <label>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q7_50" name="Q7" value="Under50"> Less than $50<br>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q7_50to100" name="Q7" value="50to100"> $50 to $100<br>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q7_100to200" name="Q7" value="100to200"> $100 to $200<br>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q7_200" name="Q7" value="Over200"> More than $200
+                            </label>
+                            </div>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend><b>Usage Preferences</b></legend>
+                            <br>
+                            <legend>8. Which service do you use now for managing your calendar?</legend>
+                            <div class="q">
+                            <label>&nbsp;&nbsp;&nbsp;
+                            <input type="text" name="Q8" maxlength="64"><br>
+                            </label>
+                            </div>
+                            <br>
+                            <legend>9. What is your preferred news outlet?</legend>
+                            <div class="q">
+                            <label>&nbsp;&nbsp;&nbsp;
+                            <input type="text" name="Q9" maxlength="64"><br>
+                            </label>
+                            </div>
+                            <br>
+                            <legend>10. Would you like a smart mirror that is on all the time or would you like to be able to turn it off?</legend>
+                            <div class="q">
+                            <label>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q10_yes" name="Q10" value="AlwaysOn"> Always On&nbsp;&nbsp;
+                            <input type="radio" id="Q10_no" name="Q10" value="TurnOff"> Must turn on
+                            </label>
+                            </div>
+                            <br>
+                            <legend>11. Would you like for a smart mirror to recognize who is using it and adjust the displayed information accordingly?</legend>
+                            <div class="q">
+                            <label>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q11_yes" name="Q11" value="Yes"> Yes&nbsp;&nbsp;
+                            <input type="radio" id="Q11_no" name="Q11" value="No"> No
+                            </label>
+                            </div>
+                            <br>
+                            <legend>12. Where in your home do you think you would hang a Smart Mirror?</legend>
+                            <div class="q">
+                            <label>&nbsp;&nbsp;&nbsp;
+                            <input type="text" name="Q12" maxlength="64"><br>
+                            </label>
+                            </div>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend><b>Interacting with the Mirror</b></legend>
+                            <br>
+                            <legend>13.	How would you prefer to interact with the smart mirror?</legend>
+                            <div class="q">
+                            <label>&nbsp;&nbsp;&nbsp;
+                            <input type="checkbox" name="Q13" value="PhoneComputer"> Through Phone or Computer<br>&nbsp;&nbsp;&nbsp;
+  							<input type="checkbox" name="Q13" value="TouchScreen"> Touch Screen<br>&nbsp;&nbsp;&nbsp;
+  							<input type="checkbox" name="Q13" value="VoiceCommands"> Voice Commands<br>&nbsp;&nbsp;&nbsp;
+  							<input type="checkbox" name="Q13" value="Gestures"> Gestures<br>&nbsp;&nbsp;&nbsp;
+  							<input type="checkbox" name="Q13" value="Other"> Other&nbsp;&nbsp;
+  							<input type="text" name="Q13" maxlength="64"><br>
+                            </label>
+                            </div>
+                            <br>
+                            <legend>14. Are you experienced with touch screen devices</legend>
+                            <div class="q">
+                            <label>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q14_yes" name="Q14" value="Yes"> Yes&nbsp;&nbsp;
+                            <input type="radio" id="Q14_no" name="Q14" value="No"> No
+                            </label>
+                            </div>
+                            <br>
+                            <legend>15. Are you familiar/experienced with gestures (hand movements) to control devices?</legend>
+                            <div class="q">
+                            <label>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q15_yes" name="Q15" value="Yes"> Yes&nbsp;&nbsp;
+                            <input type="radio" id="Q15_no" name="Q15" value="No"> No
+                            </label>
+                            </div>
+                            <br>
+                            <legend>16.	Do you have experience using voice commands to interact with a device, if so please provide an example?</legend>
+                            <div class="q">
+                            <label>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q16_yes" name="Q16" value="Yes"> Yes&nbsp;&nbsp;
+                            <input type="radio" id="Q16_no" name="Q16" value="No"> No<br>&nbsp;&nbsp;&nbsp;&nbsp;Ex:
+                            <input type="text" name="Q16" maxlength="64"><br>
+                            </label>
+                            </div>
+                            <br>
+                            <legend>17.	How often would you say you use reminders on your devices?</legend>
+                            <div class="q">
+                            <label>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q17_often" name="Q17" value="daily"> Daily<br>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q17_often" name="Q17" value="often"> Often<br>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q17_occasionally" name="Q17" value="occasionally"> Occasionally<br>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q17_rarely" name="Q17" value="100to200"> Rarely<br>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q17_never" name="Q17" value="Over200"> Never
+                            </label>
+                            </div>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend><b>Demographics</b> (Anonymous. Helps us understand who would use our products)</legend>
+                            <br>
+                            <legend>18.	To which gender identity do you most identify?</legend>
+                            <div class="q">
+                            <label>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q18_F" name="Q18" value="Female"> Female<br>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q18_M" name="Q18" value="Male"> Male<br>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q18_TF" name="Q18" value="TransFemale"> Transgender Female<br>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q18_TM" name="Q18" value="TransMale"> Transgender Male<br>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q18_GV" name="Q18" value="GenderVariant"> Gender Variant/Non-Conforming<br>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q18_NL" name="Q18" value="NotListed"> Not Listed&nbsp;&nbsp;
+                            <input type="text" name="Q18" maxlength="64"><br>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q18_NA" name="Q18" value="NoAnswer"> Prefer Not to Answer
+                            </label>
+                            </div>
+                            <br>
+                            <legend>19.	What is your age?</legend>
+                            <div class="q">
+                            <label>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q19_18" name="Q19" value="18"> Under 18<br>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q19_18to24" name="Q19" value="18to24"> 18 to 24<br>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q19_25-34" name="Q19" value="25to34"> 25 to 34<br>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q19_35-44" name="Q19" value="35to44"> 35 to 44<br>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q19_45-54" name="Q19" value="45to54"> 45 to 54<br>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q19_45-54" name="Q19" value="45to54"> 45 to 54<br>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q19_55" name="Q19" value="55 "> 55 or older
+                            </label>
+                            </div>
+                            <br>
+                            <legend>20.	What is your income level?</legend>
+                            <div class="q">
+                            <label>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q20_20K" name="Q20" value="20K"> Less than $20,000<br>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q20_20to35K" name="Q20" value="20to35K"> $20,000 to $34,999<br>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q20_35to50K" name="Q20" value="35to50K"> $35,000 to $49,999<br>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q20_50to75K" name="Q20" value="50to75K"> $50,000 to $74,999<br>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q20_75to100K" name="Q20" value="75to100K"> $75,000 to $99,999<br>&nbsp;&nbsp;&nbsp;
+                            <input type="radio" id="Q20_100K" name="Q20" value="100K"> Over $100,000
+                            </label>
+                            </div>
+                    </fieldset>
+                    <br>
+                    <div style="text-align: center;">
+                    	Prove you aren't a bot...what is this animal (3 letters, lowercase):
+                    	<input type="text" name="bot_check" minlength="3" maxlength="3"  size="6" required pattern="[a-z]" title="Please only use lowercase letters"><br>
+                    	<div class=notbot>
+                    		<img src="notbot.png">
+                    		
+                    	</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <input type="button" onclick="window.history.back()" value="Cancel">&nbsp;&nbsp;      
+                    	<input type="submit" value="Submit">
+                    </div>
+                    </form>
+                </article>
+                <div class="card">
+          <!--<div class="card-block">
+            <h2>Contact</h2>
+            <form method="POST" action="sendmail.asp" class="reveal-content">
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email" maxlength="64" required/>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" maxlength="64" required/>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" id="body" rows="5" name="body" placeholder="Enter your message" required></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" class=" btn btn-primary">Send message</button>
+              </div> 
+            </form>
+          </div> -->
+        </div>
+            </div>
+            </center>    
+        </div>
+    </body>
+</html>
