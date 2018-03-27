@@ -34,6 +34,7 @@ a:hover, a:active {
     top: 8px;
     right: 16px;
     width: 25%;
+    pointer-events:none;
 }
 
 #news {
@@ -41,10 +42,9 @@ a:hover, a:active {
 	margin-left: -25%;
 	font-size: 18px;
 	position: absolute;
-	bottom: 0;
+	bottom: 20%;
 	width: 50%;
 	height: 20vh;
-	
 }
 
 /* The Modal (background) */
