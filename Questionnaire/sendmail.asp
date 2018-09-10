@@ -35,7 +35,7 @@ Next
 fromName = "anonymous"
 botCheck = Request.Form("bot_check")
 recipientName = "Deep Reflection"
-recipientAddress= "deepreflection@fondulis.net"
+recipientAddress= "deepreflection@*****"
 subject = "Deep Reflection Questionnaire"
 
 
